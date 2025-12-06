@@ -1,4 +1,4 @@
-package s12;
+package s12.enumeracao;
 
 import s12.enums.EstadoDoPedido;
 import java.util.Date;

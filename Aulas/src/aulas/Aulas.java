@@ -1,8 +1,9 @@
 package aulas;
 
 import java.util.Scanner;
-import s12.Composicao;
-import s12.Enumeracao;
+import s12.composicao.Composicao;
+import s12.enumeracao.Enumeracao;
+import s12.stringbuilder.Social;
 
 public class Aulas {
 
@@ -17,7 +18,7 @@ public static void main(String[] args) throws Exception {
         do {
             System.out.println("1.Enumerações");
             System.out.println("2. Composição");
-            System.out.println("3. Empregado");
+            System.out.println("3. Rede social");
             System.out.println("0. TERMINAR SESSÃO");
 
             System.out.print("R:");
@@ -31,7 +32,7 @@ public static void main(String[] args) throws Exception {
                     Composicao.composicao();
                     break;
                 case 3:
-                    System.out.println("  ");
+                    Social.redeSocial();
                     break;
                 default:
                     System.out.println("Digite um valor válido no menu...");

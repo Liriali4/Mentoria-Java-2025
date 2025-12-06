@@ -1,4 +1,4 @@
-package s12;
+package s12.composicao;
 
 import java.util.ArrayList;
 import java.util.Calendar;

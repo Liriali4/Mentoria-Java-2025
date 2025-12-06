@@ -1,4 +1,4 @@
-package s12;
+package s12.composicao;
 
 public class Departamento {
     private String name;

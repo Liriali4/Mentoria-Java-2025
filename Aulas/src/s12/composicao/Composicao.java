@@ -1,4 +1,4 @@
-package s12;
+package s12.composicao;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
