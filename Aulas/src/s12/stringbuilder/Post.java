@@ -72,7 +72,6 @@ public class Post {
 
     @Override
     public String toString() {
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
         StringBuilder sb = new StringBuilder();
         sb.append(titulo + "\n");

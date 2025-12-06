@@ -3,6 +3,7 @@ package aulas;
 import java.util.Scanner;
 import s12.composicao.Composicao;
 import s12.enumeracao.Enumeracao;
+import s12.exercicodefixacao.ExF;
 import s12.stringbuilder.Social;
 
 public class Aulas {
@@ -19,6 +20,7 @@ public static void main(String[] args) throws Exception {
             System.out.println("1.Enumerações");
             System.out.println("2. Composição");
             System.out.println("3. Rede social");
+            System.out.println("4. Pedidos do Cliente");
             System.out.println("0. TERMINAR SESSÃO");
 
             System.out.print("R:");
@@ -34,6 +36,8 @@ public static void main(String[] args) throws Exception {
                 case 3:
                     Social.redeSocial();
                     break;
+                case 4: 
+                    ExF.gestaoDePedidos();
                 default:
                     System.out.println("Digite um valor válido no menu...");
             }
