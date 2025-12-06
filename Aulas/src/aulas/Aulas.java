@@ -1,32 +1,34 @@
 package aulas;
 
 import java.util.Scanner;
+import s12.Composicao;
+import s12.Enumeracao;
 
 public class Aulas {
 
-    public static void main(String[] args) {
-         System.out.println("============================================");
+public static void main(String[] args) throws Exception {
+        System.out.println("============================================");
         System.out.println("        EXERCÍCIOS DAS AULAS DO CURSO        ");
         System.out.println("============================================\n");
 
         Scanner input = new Scanner(System.in);
-        byte op;
+        int op;
 
         do {
-            System.out.println("1.Classe pessoa");
-            System.out.println("2. Fornecedor");
+            System.out.println("1.Enumerações");
+            System.out.println("2. Composição");
             System.out.println("3. Empregado");
             System.out.println("0. TERMINAR SESSÃO");
 
             System.out.print("R:");
-            op = input.nextByte();
+            op = input.nextInt();
 
             switch (op) {
                 case 1:
-                    System.out.println("\nApenas criei a classe pessoa\n");
+                    Enumeracao.enumeracao();
                     break;
                 case 2:
-                    System.out.println("  ");
+                    Composicao.composicao();
                     break;
                 case 3:
                     System.out.println("  ");
@@ -37,5 +39,5 @@ public class Aulas {
         } while (op != 0);
 
     }
-    
+
 }

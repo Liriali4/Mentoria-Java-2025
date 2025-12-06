@@ -1,5 +1,6 @@
 package s12;
 
+import s12.enums.EstadoDoPedido;
 import java.util.Date;
 
 public class Pedido {

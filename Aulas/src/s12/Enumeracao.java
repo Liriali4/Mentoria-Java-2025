@@ -1,8 +1,9 @@
 package s12;
 
+import s12.enums.EstadoDoPedido;
 import java.util.Date;
 
-public class S12 {
+public class Enumeracao {
 
     public static void enumeracao() {
         Pedido order = new Pedido(1080, new Date(), EstadoDoPedido.PENDING_PAYMENT);
@@ -16,4 +17,5 @@ public class S12 {
         System.out.println(os1);
         System.out.println(os2);
     }
+
 }

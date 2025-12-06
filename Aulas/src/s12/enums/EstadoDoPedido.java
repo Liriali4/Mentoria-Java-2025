@@ -1,4 +1,4 @@
-package s12;
+package s12.enums;
 
 public enum EstadoDoPedido {
     PENDING_PAYMENT,
