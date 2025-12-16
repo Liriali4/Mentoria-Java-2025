@@ -7,6 +7,7 @@ import s12.exercicodefixacao.ExF;
 import s12.stringbuilder.Social;
 import s13.classesAbstratas.Ex2;
 import static s13.ex1.ex1.ex1;
+import s14.Program;
 
 public class Aulas {
 
@@ -25,6 +26,7 @@ public static void main(String[] args) throws Exception {
             System.out.println("4. Pedidos do Cliente");
             System.out.println("5. Funcionário Externo");
             System.out.println("6. Formas Geométricas");
+            System.out.println("7. Hotel");
             System.out.println("0. TERMINAR SESSÃO");
 
             System.out.print("R:");
@@ -46,6 +48,8 @@ public static void main(String[] args) throws Exception {
                     ex1();
                 case 6:
                     Ex2.ex2();
+                case 7:
+                    Program.reservas();
                 default:
                     System.out.println("Digite um valor válido no menu...");
             }
