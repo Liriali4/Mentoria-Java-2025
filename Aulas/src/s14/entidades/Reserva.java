@@ -3,6 +3,7 @@ package s14.entidades;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
+import s14.exception.DomainException;
 
 public class Reserva {
 
@@ -13,6 +14,9 @@ public class Reserva {
     private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public Reserva(Integer roomNumber, Date checkin, Date checkout) {
+         if (!checkout.after(checkin)) {
+            throw new DomainException("Data do chekin não pode ser maior que checkout!!!");
+        }
         this.roomNumber = roomNumber;
         this.checkin = checkin;
         this.checkout = checkout;
@@ -24,17 +28,16 @@ public class Reserva {
         return diff;
     }
 
-    public String updateDates(Date checkin, Date checkout) {
+    public void updateDates(Date checkin, Date checkout) {
         Date now = new Date();
         if (checkin.before(now) || checkout.before(now)) {
-            return "As Datas devem ser futuras!!!";
+            throw new DomainException("As Datas devem ser futuras!!!");
         }
         if (!checkout.after(checkin)) {
-            return "[ERRO] : Data do chekin não pode ser maior que checkout!!!";
+            throw new DomainException("Data do chekin não pode ser maior que checkout!!!");
         }
         this.checkin = checkin;
         this.checkout = checkout;
-        return null;
     }
 
     public Integer getRoomNumber() {

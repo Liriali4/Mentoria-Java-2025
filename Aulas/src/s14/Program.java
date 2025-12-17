@@ -5,23 +5,22 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 import s14.entidades.Reserva;
+import s14.exception.DomainException;
 
 public class Program {
 
-    public static void reservas() throws ParseException {
+    public static void reservas() {
         Scanner input = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-        System.out.print("Nº do quarto: ");
-        int num = input.nextInt();
-        System.out.print("Data de checkin (dd/MM/yyyy): ");
-        Date checkin = sdf.parse(input.next());
-        System.out.print("Data de checkout (dd/MM/yyyy): ");
-        Date checkout = sdf.parse(input.next());
+        try {
+            System.out.print("Nº do quarto: ");
+            int num = input.nextInt();
+            System.out.print("Data de checkin (dd/MM/yyyy): ");
+            Date checkin = sdf.parse(input.next());
+            System.out.print("Data de checkout (dd/MM/yyyy): ");
+            Date checkout = sdf.parse(input.next());
 
-        if (!checkout.after(checkin)) {
-            System.out.println("[ERRO] : Data do chekin não pode ser maior que checkout!!!");
-        } else {
             Reserva reserva = new Reserva(num, checkin, checkout);
             System.out.println(reserva);
             System.out.println("");
@@ -31,15 +30,16 @@ public class Program {
             checkin = sdf.parse(input.next());
             System.out.print("Data de checkout (dd/MM/yyyy): ");
             checkout = sdf.parse(input.next());
-            
-           String error = reserva.updateDates(checkin, checkout);
-           if(error != null){
-               System.out.println("[ERRO] : "+ error);
-           }else{
-               System.out.println(reserva);
-           }
-        }
 
+            reserva.updateDates(checkin, checkout);
+            System.out.println(reserva);
+        } catch (ParseException e) {
+            System.out.println("[Erro] : Formato de data errado!!!");
+        } catch (DomainException e) {
+            System.out.println("[Erro] : " + e.getMessage());
+        } catch(RuntimeException e){
+            System.out.println("Erro inesperado!!!");
+        }
         input.close();
     }
 }
