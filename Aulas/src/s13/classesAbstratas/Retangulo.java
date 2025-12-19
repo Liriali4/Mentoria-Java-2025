@@ -20,6 +20,11 @@ public class Retangulo extends Forma {
         return largura * altura;
     }
 
+    @Override
+    public double perimetro(){
+        return 2 * (largura + largura);
+    }
+    
     public Double getLargura() {
         return largura;
     }

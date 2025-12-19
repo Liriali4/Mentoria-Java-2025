@@ -11,6 +11,8 @@ public abstract class Forma {
     }
     
     public abstract double area();
+    
+    public abstract double perimetro();
 
     public Cor getCor() {
         return cor;

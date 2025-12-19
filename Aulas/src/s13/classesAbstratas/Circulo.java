@@ -26,4 +26,8 @@ public class Circulo extends Forma {
         return Math.PI * raio * raio;
     }
 
+    @Override
+    public double perimetro() {
+        return Math.PI * raio * 2;
+    }
 }
