@@ -1,6 +1,6 @@
 package s13.classesAbstratas;
 
-public class Retangulo extends Forma {
+public class Retangulo extends AbstractForma {
 
     private Double largura;
     private Double altura;

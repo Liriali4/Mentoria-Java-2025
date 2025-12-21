@@ -1,6 +1,6 @@
 package s13.classesAbstratas;
 
-public class Circulo extends Forma {
+public class Circulo extends AbstractForma {
 
     private Double raio;
 

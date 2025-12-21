@@ -7,10 +7,10 @@ import s16.LocadoraDeCarros;
 import s12.enumeracao.Enumeracao;
 import s12.exercicodefixacao.ExF;
 import s12.stringbuilder.Social;
-import s13.classesAbstratas.Ex2;
 import static s13.ex1.ex1.ex1;
 import s14.Program;
 import s15.Servidor;*/
+import s13.classesAbstratas.Ex2;
 public class Aulas {
 
     public static void main(String[] args) {
@@ -51,7 +51,7 @@ public class Aulas {
                 case 5:
                 //ex1();
                 case 6:
-                //Ex2.ex2();
+                Ex2.ex2();
                 case 7:
                     //Program.reservas();
                     break;

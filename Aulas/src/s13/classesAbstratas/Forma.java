@@ -1,24 +1,8 @@
 package s13.classesAbstratas;
 
-public abstract class Forma {
-    private Cor cor;
+public interface Forma {
 
-    public Forma() {
-    }
+    double area();
 
-    public Forma(Cor cor) {
-        this.cor = cor;
-    }
-    
-    public abstract double area();
-    
-    public abstract double perimetro();
-
-    public Cor getCor() {
-        return cor;
-    }
-
-    public void setCor(Cor cor) {
-        this.cor = cor;
-    }
+    double perimetro();
 }
