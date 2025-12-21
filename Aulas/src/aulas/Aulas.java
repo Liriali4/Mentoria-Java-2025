@@ -1,7 +1,7 @@
 package aulas;
 
 import java.util.Scanner;
-import s15.Servidor;
+import s16.LocadoraDeCarros;
 
 /*import s12.composicao.Composicao;
 import s12.enumeracao.Enumeracao;
@@ -9,7 +9,8 @@ import s12.exercicodefixacao.ExF;
 import s12.stringbuilder.Social;
 import s13.classesAbstratas.Ex2;
 import static s13.ex1.ex1.ex1;
-import s14.Program;*/
+import s14.Program;
+import s15.Servidor;*/
 public class Aulas {
 
     public static void main(String[] args) {
@@ -29,6 +30,7 @@ public class Aulas {
             System.out.println("6. Formas Geométricas");
             System.out.println("7. Hotel");
             System.out.println("8. Servidor de arquivos");
+            System.out.println("9. Locadora de carro");
             System.out.println("0. TERMINAR SESSÃO");
 
             System.out.print("R:");
@@ -54,11 +56,14 @@ public class Aulas {
                     //Program.reservas();
                     break;
                 case 8:
-                    Servidor.ex1();
+                    /*                    Servidor.ex1();
                     Servidor.ex2();
                     Servidor.ex3();
                     Servidor.ex4();
-                    Servidor.ex5();
+                    Servidor.ex5();*/
+                    break;
+                case 9:
+                    LocadoraDeCarros.locadoraDeCarros();
                     break;
                 default:
                     System.out.println("Digite um valor válido no menu...");
