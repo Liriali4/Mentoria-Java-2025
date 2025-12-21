@@ -9,9 +9,9 @@ public class CarroAlugadoService {
     private Double precoPorHora;
     private Double precoPorDia;
 
-    private TaxService taxService;
+    private TaxInterface taxService;
 
-    public CarroAlugadoService(Double precoPorHora, Double precoPorDia, TaxService tax) {
+    public CarroAlugadoService(Double precoPorHora, Double precoPorDia, TaxInterface tax) {
         this.precoPorHora = precoPorHora;
         this.precoPorDia = precoPorDia;
         this.taxService = tax;
