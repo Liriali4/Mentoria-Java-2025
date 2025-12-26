@@ -12,6 +12,7 @@ import s14.Program;
 import s15.Servidor;*/
 import s13.classesAbstratas.Ex2;
 import s16.InterfaceComparable;
+import s17.Delimitados;
 public class Aulas {
 
     public static void main(String[] args) {
@@ -33,6 +34,7 @@ public class Aulas {
             System.out.println("8. Servidor de arquivos");
             System.out.println("9. Locadora de carro");
             System.out.println("10. Interface Comparable");
+            System.out.println("11. Genérico Delimitado");
             System.out.println("0. TERMINAR SESSÃO");
 
             System.out.print("R:");
@@ -70,6 +72,9 @@ public class Aulas {
                     break;
                 case 10:
                     InterfaceComparable.lista();
+                    break;
+                case 11:
+                    Delimitados.ex1();
                     break;
                 default:
                     System.out.println("Digite um valor válido no menu...");
