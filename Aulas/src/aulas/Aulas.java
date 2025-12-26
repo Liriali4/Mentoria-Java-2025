@@ -11,6 +11,7 @@ import static s13.ex1.ex1.ex1;
 import s14.Program;
 import s15.Servidor;*/
 import s13.classesAbstratas.Ex2;
+import s16.InterfaceComparable;
 public class Aulas {
 
     public static void main(String[] args) {
@@ -31,6 +32,7 @@ public class Aulas {
             System.out.println("7. Hotel");
             System.out.println("8. Servidor de arquivos");
             System.out.println("9. Locadora de carro");
+            System.out.println("10. Interface Comparable");
             System.out.println("0. TERMINAR SESSÃO");
 
             System.out.print("R:");
@@ -52,6 +54,7 @@ public class Aulas {
                 //ex1();
                 case 6:
                 Ex2.ex2();
+                
                 case 7:
                     //Program.reservas();
                     break;
@@ -64,6 +67,9 @@ public class Aulas {
                     break;
                 case 9:
                     LocadoraDeCarros.locadoraDeCarros();
+                    break;
+                case 10:
+                    InterfaceComparable.lista();
                     break;
                 default:
                     System.out.println("Digite um valor válido no menu...");
