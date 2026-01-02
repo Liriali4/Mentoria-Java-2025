@@ -12,6 +12,7 @@ import s14.Program;
 import s15.Servidor;*/
 import s13.classesAbstratas.Ex2;
 import s16.InterfaceComparable;
+import s17.Conjuntos;
 import s17.Curinga;
 import s17.Delimitados;
 public class Aulas {
@@ -37,6 +38,7 @@ public class Aulas {
             System.out.println("10. Interface Comparable");
             System.out.println("11. Genérico Delimitado");
             System.out.println("12. Curinga Delimiado");
+            System.out.println("13. Set");
             System.out.println("0. TERMINAR SESSÃO");
 
             System.out.print("R:");
@@ -80,6 +82,9 @@ public class Aulas {
                     break;
                 case 12:
                     Curinga.curingaDelimitados();
+                    break;
+                case 13:
+                    Conjuntos.conjuntos();
                     break;
                 default:
                     System.out.println("Digite um valor válido no menu...");
