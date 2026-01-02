@@ -15,6 +15,8 @@ import s16.InterfaceComparable;
 import s17.Conjuntos;
 import s17.Curinga;
 import s17.Delimitados;
+import s17.Usuarios;
+
 public class Aulas {
 
     public static void main(String[] args) {
@@ -38,7 +40,8 @@ public class Aulas {
             System.out.println("10. Interface Comparable");
             System.out.println("11. Genérico Delimitado");
             System.out.println("12. Curinga Delimiado");
-            System.out.println("13. Set");
+            System.out.println("13. Conjunto de valores (Set)");
+            System.out.println("14. Usuários (Map)");
             System.out.println("0. TERMINAR SESSÃO");
 
             System.out.print("R:");
@@ -59,8 +62,8 @@ public class Aulas {
                 case 5:
                 //ex1();
                 case 6:
-                Ex2.ex2();
-                
+                    Ex2.ex2();
+
                 case 7:
                     //Program.reservas();
                     break;
@@ -85,6 +88,9 @@ public class Aulas {
                     break;
                 case 13:
                     Conjuntos.conjuntos();
+                    break;
+                case 14:
+                    Usuarios.usuarios();
                     break;
                 default:
                     System.out.println("Digite um valor válido no menu...");
