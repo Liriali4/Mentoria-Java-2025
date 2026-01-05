@@ -2,11 +2,11 @@ package s18;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Function;
+//import java.util.function.Function;
 import java.util.stream.Collectors;
 import s18.entidades.Product;
-import s18.utils.PriceUpdate;
-import s18.utils.UpperCaseName;
+//import s18.utils.PriceUpdate;
+//import s18.utils.UpperCaseName;
 
 public class InterfaceFuncional {
 
@@ -17,6 +17,12 @@ public class InterfaceFuncional {
         stock.add(new Product("Mouse", 50.0));
         stock.add(new Product("HD Case", 80.90));
         stock.add(new Product("Tablet", 350.50));
+
+        ProductService ps = new ProductService();
+
+        double sum = ps.filteredSum(stock, p -> p.getName().charAt(0) == 'T');
+        
+        System.out.println("Sum = " + String.format("%.2f", sum) + "\n");
 
         System.out.println("- Predicate\n");
         double min = 100.0;
