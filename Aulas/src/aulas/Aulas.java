@@ -16,6 +16,7 @@ import s17.Conjuntos;
 import s17.Curinga;
 import s17.Delimitados;
 import s17.Usuarios;
+import s18.InterfaceFuncional;
 import s18.Lista;
 
 public class Aulas {
@@ -44,6 +45,7 @@ public class Aulas {
             System.out.println("13. Conjunto de valores (Set)");
             System.out.println("14. Usuários (Map)");
             System.out.println("15. Comparação funcional");
+            System.out.println("16. Interface funcional");
             System.out.println("0. TERMINAR SESSÃO");
 
             System.out.print("R:");
@@ -96,6 +98,9 @@ public class Aulas {
                     break;
                 case 15:
                     Lista.lista();
+                    break;
+                case 16:
+                    InterfaceFuncional.iFuncional();
                     break;
                 default:
                     System.out.println("Digite um valor válido no menu...");
