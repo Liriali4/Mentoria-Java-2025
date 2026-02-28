@@ -10,8 +10,10 @@ public abstract class AbstractForma implements Forma{
         this.cor = cor;
     }
     
+    @Override
     public abstract double area();
     
+    @Override
     public abstract double perimetro();
 
     public Cor getCor() {
